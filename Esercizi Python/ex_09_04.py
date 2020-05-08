@@ -1,4 +1,3 @@
-
 #Write a program to read through the mbox-short.txt and figure out who has sent the greatest number of mail messages.
 #The program looks for 'From ' lines and takes the second word of those lines as the person who sent the mail. 
 #The program creates a Python dictionary that maps the sender's mail address to a count of the number of times they 
@@ -8,7 +7,7 @@
 #we start by getting the name of the file from input
 fname = input('Enter file name: ')
 
-#with this if i can just press enter and the program will automatically set the name to the value of mbox.short.txt
+#with this if i can just press enter and the program will automatically set the name to the value of mbox-short.txt
 if len(fname) < 1 :
     fname = 'mbox-short.txt'
     
@@ -29,7 +28,7 @@ for line in fh:
     if not line.startswith('From '):
         continue
         
-    #we divide the line into words contained in a list of strings
+    #we divide the line into words
     word = line.split()
     
     #we get the email, which is the second word
@@ -38,7 +37,7 @@ for line in fh:
     #we count the occurrences of the mail inside the dictionary, if it's the first time we see them we'll set value of 1
     counts[sline] = counts.get(sline,0)+1
 
-#we set two variables for bigger key and bigger value of the dictionary
+#we create two variables for bigger key and bigger value of the dictionary
 bigCount = None
 bigMail = None
 
