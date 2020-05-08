@@ -48,4 +48,9 @@ for word,count in counts.items():
     if bigCount is None or count > bigCount:
         bigWord = word
         bigCount = count
-print(bigWord,bigCount)
+
+#if the file inserted existed and didn't had any 'Form ', we need to put a try except, otherwise we'll get a traceback error
+try:
+    print(bigWord,bigCount)
+except:
+    print("File does not contain any From")
