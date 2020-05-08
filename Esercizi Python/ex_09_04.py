@@ -8,6 +8,10 @@
 #we start by getting the name of the file from input
 fname = input('Enter file name: ')
 
+#with this if i can just press enter and the program will automatically set the name to the value of mbox.short.txt
+if len(fname) < 1 :
+    fname = 'mbox-short.txt'
+    
 #we check if the file exists
 try:
     fh = open(fname)
