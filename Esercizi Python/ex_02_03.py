@@ -19,7 +19,7 @@ print('Pay :', (hours * ratePerHour)
       
 #if we wanted to check the user data to exclude bad data, we could have used the try except
 #try:
-#    fhours = float(hours)
+#   fhours = float(hours)
 #except:
-#    print('invalid data input')
-#    quit() '''
+#   print('invalid data input')
+#   quit() 
