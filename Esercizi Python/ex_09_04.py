@@ -24,10 +24,7 @@ counts = dict()
 
 #with this loop we get all the emails and we count how many times they appear
 for line in fh:
-    
-    #we eliminate left spaces
-    line = line.strip()word
-    
+ 
     #we check if the lines starts with From 
     if not line.startswith('From '):
         continue
