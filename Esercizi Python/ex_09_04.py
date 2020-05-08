@@ -18,7 +18,7 @@ except:
 #we create a dictionary
 counts = dict()
 
-#with this loop we get all the emails andwe count how many times they appear
+#with this loop we get all the emails and we count how many times they appear
 for line in fh:
     
     #we eliminate left spaces
@@ -31,7 +31,7 @@ for line in fh:
     #we divide the line into words contained in a list of strings
     word = line.split()
     
-    #we get the email, which is the second 
+    #we get the email, which is the second word
     sline = word[1]
     
     #we count the occurrences of the mail inside the dictionary, if it's the first time we see them we'll set value of 1
